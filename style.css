@@ -3,8 +3,16 @@
 *{
   padding:0;
   margin:0;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
+.center{
+  text-align:center;
+}
+body{
+  font-family: Montserrat,sans-serif;
+}
+
+
 
 /*--- Banner ---*/
 header{
@@ -14,16 +22,32 @@ header{
   background-position: center;
 }
 h1{
-  font-family: 'Roboto Slab', serif;
   color:#ffffff;
   text-align:center;
+  font-size:70px;
 }
 
 h2{
-  font-family: 'Roboto Slab', serif;
   color:#ffffff;
+  font-size: 1.6rem;
+  border:
 }
 nav a{
   text-decoration: none;
   color:#ffffff;
+  padding: 2% 5%;
+  display:inline-block;
+  font-size:1.2rem;
+}
+nav a:hover{
+  transition: ease 0.5s;
+  -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+.featured-dive{
+  color:#000000;
+  text-align:center;
+  padding: 1%;
+  font-size:1.6rem;
 }
