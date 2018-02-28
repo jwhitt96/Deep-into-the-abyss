@@ -1,0 +1,29 @@
+/*--- CSS Reset ---*/
+
+*{
+  padding:0;
+  margin:0;
+  border: 1px solid grey;
+}
+
+/*--- Banner ---*/
+header{
+  background-image: url('Images/Website-Banner.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  font-family: 'Roboto Slab', serif;
+  color:#ffffff;
+  text-align:center;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  color:#ffffff;
+}
+nav a{
+  text-decoration: none;
+  color:#ffffff;
+}
