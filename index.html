@@ -2,33 +2,36 @@
 layout: default
 header-class: grid-center-middle center index-header
 subtitle: Diving Experiences from around the world
+place:
+  - image: /Images/koh-tao-cover.jpg
+    title: Koh-Tao | Thailand
+    url: koh-tao.html
+  - image: /Images/cape-town-cover.jpg
+    title: Cape Town | South Africa
+    url:
+  - image: /Images/scapa-flow-cover.jpg
+    title: Scapa Flow | Scotland
+    url:
+  - image: /Images/komodo-cover.jpg
+    title: Komodo | Indonesia
+    url:
+  - image: /Images/thistlegorm-cover.jpg
+    title: Thistlegorm | Egypt
+    url:
+  - image: /Images/Sodwana-cover.jpg
+    title: Sodwana Bay | South Africa
+    url:
 ---
 <section class="grid center featured">
  <h2 class="featured-dive col-12">Featured Dive Experiences</h2>
- <div class="col-6">
-   <h3>Koh Tao - Thailand</h3>
-   <a href="koh-tao.html">More info</a>
+{%for place in page.place %}
+ <div class="col-4 grid-middle-center index-place-pic" style="background-image:url('{{place.image}}')">
+   <div>
+   <h3>{{place.title}}</h3>
+   <a href="{{place.url}}">More info</a>
+   </div>
  </div>
- <div class="col-6">
-   <h3>Cape Town - South Africa</h3>
-   <a href="#">More info</a>
- </div>
- <div class="col-6">
-   <h3>Scapa Flow - Scotland</h3>
-   <a href="#">More info</a>
- </div>
- <div class="col-6">
-  <h3>Komodo - Indonesia</h3>
-  <a href="#">More info</a>
- </div>
- <div class="col-6">
-  <h3>Thistlegorm - Egypt</h3>
-  <a href="#">More info</a>
- </div>
- <div class="col-6">
-  <h3>Sodwana Bay - South Africa</h3>
-  <a href="#">More info</a>
- </div>
+ {% endfor %}
 </section>
 <section>
  <h2 class="center">World Map</h2>
