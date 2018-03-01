@@ -20,15 +20,14 @@ header{
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  color:#ffffff;
 }
 h1{
-  color:#ffffff;
   text-align:center;
   font-size:70px;
 }
 
 h2{
-  color:#ffffff;
   font-size: 1.6rem;
   border:
 }
