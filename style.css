@@ -34,7 +34,7 @@ h2{
 }
 nav a{
   text-decoration: none;
-  color:#ffffff;
+  color:inherit;
   padding: 2% 5%;
   display:inline-block;
   font-size:1.2rem;
