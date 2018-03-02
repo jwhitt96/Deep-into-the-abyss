@@ -58,7 +58,7 @@ nav a{
   padding: 2% 5%;
   display:inline-block;
   font-size:1.2rem;
-  transition: ease 4s;
+  transition: transform ease 4s;
 }
 nav a:hover{
         transform: scale(1.3);
@@ -90,11 +90,10 @@ iframe{
 }
 
 /*--- Form ---*/
-input{
+input, textarea{
   width:100%;
-}
-textarea{
-  width:100%;
+  padding:1.5rem;
+  font-size:.7rem;
 }
 .dark{
   background-color:#03304C;
