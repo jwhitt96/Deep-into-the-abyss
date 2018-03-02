@@ -2,16 +2,16 @@
 <html>
 <head>
  <link href="https://fonts.googleapis.com/css?family=Montserrat|Old+Standard+TT" rel="stylesheet">
- <link rel="icon" href="Images/Deep-logo.jpg" type="image" sizes="16x16">
+ <link rel="icon" href="/Images/Deep-logo.jpg" type="image" sizes="16x16">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.0/gridlex.min.css">
- <link rel="stylesheet" href="style.css">
- <title>Deep Into The Abyss | James Whittock</title>
+ <link rel="stylesheet" href="../style.css">
+ <title>{{page.title}} | James Whittock</title>
 </head>
 <body>
 <header class="{{page.header-class}}">
  <div>
    <h1>Deep Into The Abyss</h1>
-   <h2>{{page.subtitle}}</h2>
+   {% if page.subtitle %} <h2>{{page.subtitle}}</h2> {% endif %}
   <nav>
     <a href="/index.html">Home</a>
     <a href="/about-me.html">About Me</a>
@@ -39,16 +39,16 @@
       <div class="col-12">
         <textarea rows=5 name="your-message" placeholder="MESSAGE" required=""></textarea>
       </div>
-      <div>
+      <div class="margin-auto">
         <input type="submit" value="Submit">
       </div>
     </div>
-  <nav>
+  <nav class="center">
     <a href="#">Instagram</a>
     <a href="#">Facebook</a>
     <a href="#">Twitter</a>
   </nav>
-  <p>copyright 2018</p>
+  <p class="center">Copyright 2018</p>
   </section>
 </footer>
 </body>

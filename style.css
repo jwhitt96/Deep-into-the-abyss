@@ -14,6 +14,9 @@ body{
 section{
   padding:4%;
 }
+.margin-auto{
+  margin:auto;
+}
 
 /*--- Typography ---*/
 p{
@@ -95,6 +98,9 @@ input, textarea{
   padding:1.5rem;
   font-size:.7rem;
 }
+.dark h3{
+  font-size:2.3rem;
+}
 .dark{
   background-color:#03304C;
   color:#AAC9E1;
@@ -107,4 +113,7 @@ input[type=submit]{
   color:#AAC9E1;
   border-radius:3px;
   border:none;
+  padding-left: 6rem;
+  padding-right:6rem;
+  cursor:pointer;
 }
