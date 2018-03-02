@@ -124,3 +124,10 @@ input[type=submit]{
   padding-right:6rem;
   cursor:pointer;
 }
+
+
+
+/*--- Dives ---*/
+.dives .grid:nth-child(2n){
+  flex-direction: row-reverse;
+}
