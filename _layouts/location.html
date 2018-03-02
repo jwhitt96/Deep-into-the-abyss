@@ -3,16 +3,15 @@ layout: default
 ---
 
 <section class="grid">
-  <div class:"col-4">
+  <div class="col-4">
     <img src="{{page.image-1}}">
   </div>
-  <div class:"col-8">
+  <div class="col-8">
     <h2>{{page.location-name}}</h2>
     <h3> {{ page.date | date_to_long_string }} | By James Whittock</h3>
+    <p>{{page.intro}}</p>
   </div>
 </section>
-<section>
-  <p>{{page.intro}}</p>
 <section>
   <img src="{{page.image-2}}">
 </section>
