@@ -3,33 +3,39 @@ layout: default
 header-class: grid-center-middle center index-header
 subtitle: Diving Experiences from around the world
 title: Deep Into The Abyss
-place:
-  - image: /Images/koh-tao-cover.jpg
-    title: Koh-Tao | Thailand
-    url: /locations/koh-tao.html
-  - image: /Images/cape-town-cover.jpg
-    title: Cape Town | South Africa
-    url: /locations/cape-town.html
-  - image: /Images/scapa-flow-cover.jpg
-    title: Scapa Flow | Scotland
-    url: /locations/scapa-flow.html
-  - image: /Images/komodo-cover.jpg
-    title: Komodo | Indonesia
-    url: /locations/komodo.html
-  - image: /Images/thistlegorm-cover.jpg
-    title: Thistlegorm | Egypt
-    url: /locations/thistlegorm.html
-  - image: /Images/Sodwana-cover.jpg
-    title: Sodwana Bay | South Africa
-    url: /locations/sodwana.html
+places:
+  - kohtao:
+    title: Koh Tao
+    cover-pic: /images/locations/koh-tao/koh-tao-cover.jpg
+    url:
+  - capetown:
+    title: Cape Town
+    cover-pic: /images/locations/cape-town/cape-town-cover.jpg
+    url:
+  - komodo:
+    title: Komodo
+    cover-pic: /images/locations/komodo/komodo-cover.jpg
+    url:
+  - scapaflow:
+    title: Scapa Flow
+    cover-pic: /images/locations/scapa-flow/scapa-flow-cover.jpg
+    url:
+  - thistlegorm:
+    title: Thistlegorm
+    cover-pic: /images/locations/thistlegorm/thistlegorm-cover.jpg
+    url:
+  - sodwana:
+    title: Sodwana
+    cover-pic: /images/locations/sodwana/sodwana-cover.jpg
+    url:
 ---
 <section class="grid center featured">
  <h2 class="featured-dive col-12">Featured Dive Experiences</h2>
-{%for place in page.place %}
- <div class="col-4 grid-middle-center index-place-pic" style="background-image:url('{{place.image}}')">
+{% for item in page.places %}
+ <div class="col-4 grid-middle-center index-place-pic" style="background-image:url('{{ item.cover-pic }}')">
    <div>
-   <h3>{{place.title}}</h3>
-   <a href="{{place.url}}">More info</a>
+   <h3>{{ item.title }}</h3>
+   <a href="{{ item.url }}">More info</a>
    </div>
  </div>
  {% endfor %}

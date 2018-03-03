@@ -45,7 +45,7 @@ a{
 /*--- Banner ---*/
 
 .index-header{
-  background-image: url('Images/Website-Banner.png');
+  background-image: url('images/banner/website-banner.png');
   min-height: 100vh;
   background-size: cover;
   background-position: center;

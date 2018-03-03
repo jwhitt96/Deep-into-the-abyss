@@ -4,7 +4,7 @@ layout: default
 
 <section class="grid">
   <div class="col-4">
-    <img src="{{page.image-1}}">
+    <img src="{{page.map-image}}">
   </div>
   <div class="col-8">
     <h2>{{page.location-name}}</h2>
@@ -12,18 +12,27 @@ layout: default
     <p>{{page.intro}}</p>
   </div>
 </section>
+
 <section>
-  <img src="{{page.image-2}}">
+  <figure>
+    <img src="{{ page.images[0].url }}" />
+    <figcaption>{{ page.images[0].caption }}</figcaption>
+  </figure>
 </section>
+
 <section>
   {{page.description}}
 </section>
+
 <section>
-  <img src="{{page.image-3}}">
+  {% for object in page.images offset:1 %}
+  <figure>
+    <img src="{{ object.url }}" />
+    <figcaption>{{ object.caption }}</figcaption>
+  </figure>
+  {% endfor %}
 </section>
-<section>
-  <img src="{{page.image-4}}">
-</section>
-<section>
-  <img src="{{page.image-5}}">
-</section>
+
+{% if page.video != "" %}
+  <iframe width="560" height="315" src="{{ page.video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% endif %}
