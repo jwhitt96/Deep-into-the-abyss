@@ -115,7 +115,7 @@ iframe{
 /*--- Form ---*/
 input, textarea{
   width:100%;
-  padding:1.5rem;
+  padding:1rem;
   font-size:.7rem;
   text-rendering: auto;
   color: initial;
@@ -178,7 +178,7 @@ input[type=submit]{
 }
 /*--- social ---*/
 .social a{
-  font-size:6rem;
+  font-size:3rem;
 }
 
 
@@ -190,6 +190,10 @@ input[type=submit]{
 figcaption{
   text-align: center;
   font-size: 1rem;
+}
+
+.location-img-section{
+  padding-bottom:3rem;
 }
 
 /*--- burger-menu ---*/
@@ -292,5 +296,11 @@ figcaption{
   }
   h3{
     font-size:1rem;
+  }
+  input, textarea{
+    padding:0.5rem;
+  }
+  .social a{
+    font-size: 1rem;
   }
 }
