@@ -108,7 +108,8 @@ nav a:hover{
 
 /*--- World Map ---*/
 iframe{
-/*  margin:1rem;*/
+ width:100%;
+ min-height: 80vh;
 }
 
 /*--- Form ---*/
@@ -233,7 +234,7 @@ figcaption{
 }
 
 .burger-button.active .burger-middle{
-  transform: rotateZ(270deg);
+  transform: rotateZ(2700deg);
   border-color: rgba(0,0,0,0);
   background-color:rgba(0,0,0,0);
 }
