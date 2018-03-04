@@ -19,7 +19,12 @@ function scrollUp(){
   }, 3000);
 
 }
-
+$( document ).ready(function() {
+   $(".burger-button").click(function(){
+     $(".burger-button").toggleClass("active");
+     $(".burger-menu").slideToggle();
+   });
+});
 
 $('#scrollup').on('click', scrollUp);
 
