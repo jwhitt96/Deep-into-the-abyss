@@ -3,7 +3,6 @@
 *{
   padding:0;
   margin:0;
-  border: 1px solid grey;
 }
 
 img {
@@ -24,7 +23,6 @@ section{
 .margin-auto{
   margin:auto;
 }
-
 /*--- Typography ---*/
 p{
  line-height:1.5;
@@ -110,7 +108,7 @@ nav a:hover{
 
 /*--- World Map ---*/
 iframe{
-  width:100%;
+/*  margin:1rem;*/
 }
 
 /*--- Form ---*/
@@ -118,6 +116,18 @@ input, textarea{
   width:100%;
   padding:1.5rem;
   font-size:.7rem;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 11px system-ui;
+}
 }
 .dark h3{
   font-size:2.3rem;
@@ -140,6 +150,32 @@ input[type=submit]{
   cursor:pointer;
 }
 
+/*--- scrollup ---*/
+.footer-div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all .5s ease;
+}
+.footer-div a {
+    display: inline-block;
+    margin: .6rem .6rem .6rem 0;
+    color: inherit;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+.footer-div a img {
+  width: 40px;
+  height: auto;
+}
+.footer-div.show{
+  opacity: 1;
+  transform: translateY(0);
+}
 /*--- social ---*/
 .social a{
   font-size:6rem;
@@ -150,4 +186,8 @@ input[type=submit]{
 /*--- Dives ---*/
 .dives .grid:nth-child(2n){
   flex-direction: row-reverse;
+}
+figcaption{
+  text-align: center;
+  font-size: 1rem;
 }
