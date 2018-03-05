@@ -29,6 +29,13 @@ $( document ).ready(function() {
     $(".burger-button").toggleClass("active");
     $(".burger-menu").slideToggle();
   });
+
+  var typed = new Typed('#demo', {
+  strings: ["Diving Experiences from around the World"],
+  typeSpeed: 30,
+  showCursor: false
+});
+
 });
 
 $('#scrollup').on('click', scrollUp);
