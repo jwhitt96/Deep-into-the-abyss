@@ -3,12 +3,12 @@ layout: default
 ---
 <section class="dives">
   {%for location in site.locations reversed%}
-<div class="grid">
+<div class="grid-middle">
   <div class="grid-middle-center col-4_sm-12">
-    <img src="{{location.cover-pic}}">
+   <a href="{{location.url}}">  <img src="{{location.cover-pic}}"></a>
   </div>
   <div class="col-8_sm-12">
-    <h2>{{location.title}}</h2>
+    <h2> <a href="{{location.url}}"> {{location.title}}</a></h2>
     <p>{{location.intro}}<a href="{{location.url}}"> More info</a> </p>
   </div>
 </div>

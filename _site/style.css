@@ -25,11 +25,15 @@ section{
 }
 /*--- Typography ---*/
 p{
- line-height:1.5;
+ line-height:1.7;
 }
 
 a{
   color:inherit;
+}
+
+h2 a{
+  text-decoration:none;
 }
 
 /*--- Featured Dive Imgs ---*/
@@ -136,6 +140,12 @@ input, textarea{
   background-color:#03304C;
   color:#AAC9E1;
 }
+.dark h1 a{
+  text-decoration: none;
+  display: inline-block;
+  font-size:3rem;
+}
+
 #contact h3{
   padding-bottom:7%;
   color:#ffffff;
@@ -184,9 +194,10 @@ input[type=submit]{
 
 
 /*--- Dives ---*/
-.dives .grid:nth-child(2n){
+.dives .grid-middle:nth-child(2n){
   flex-direction: row-reverse;
 }
+
 figcaption{
   text-align: center;
   font-size: 1rem;
@@ -195,7 +206,9 @@ figcaption{
 .location-img-section{
   padding-bottom:3rem;
 }
-
+.dives div{
+  padding-bottom: 3rem;
+}
 /*--- burger-menu ---*/
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 .burger-button {
