@@ -30,13 +30,14 @@ places:
     url: http://www.deepintotheabyss.com/locations/sodwana.html
 ---
 <section class="grid center featured">
- <h2 class="featured-dive col-12">Featured Dive Experiences</h2>
+ <h2 id="featured-dive-experiences" class="featured-dive col-12">Featured Dive Experiences</h2>
 {% for item in page.places %}
- <div class="col-4_sm-6_xs-12 grid-middle-center index-place-pic" style="background-image:url('{{ item.cover-pic }}')">
-   <div>
-   <h3>{{ item.title }}</h3>
-   <a href="{{ item.url }}">More info</a>
+ <div class="col-4_sm-6_xs-12 grid-middle-center index-place-pic">
+   <div class="txt">
+     <h3>{{ item.title }}</h3>
+     <a href="{{ item.url }}">More info</a>
    </div>
+   <div class="bg-image" style="background-image:url('{{ item.cover-pic }}')"></div>
  </div>
  {% endfor %}
 </section>
