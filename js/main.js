@@ -31,9 +31,12 @@ $( document ).ready(function() {
   });
 
   var typed = new Typed('#demo', {
-  strings: ["Diving Experiences from around the World"],
+  strings: ["Diving Experiences from around the World","Diving Experiences from Thailand","Diving Experiences from South Africa", "Diving Experiences from Indonesia", "Diving Experiences from Egypt", "Diving Experiences from England", "Diving Experiences from Scotland" ],
   typeSpeed: 30,
-  showCursor: false
+  showCursor: false,
+  loop: 0,
+  backSpeed: 30,
+
 });
 
 });
