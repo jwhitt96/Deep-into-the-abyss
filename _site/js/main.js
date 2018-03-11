@@ -36,6 +36,7 @@ $( document ).ready(function() {
   showCursor: false,
   loop: 0,
   backSpeed: 30,
+  backDelay:2000,
 
 });
 
